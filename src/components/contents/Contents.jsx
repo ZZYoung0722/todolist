@@ -1,6 +1,6 @@
 import "./style.css";
 import styled from "styled-components";
-import TodoList from ".Todolist";
+import TodoList from "./Todolist";
 
 export default function Contents({ list, setList, name }) {
     const component = name === "working" ? true : false;
