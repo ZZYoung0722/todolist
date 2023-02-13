@@ -33,10 +33,17 @@ export default function Header({list, setList}) {
             <h1 className="title">Todo-list</h1>
             <div className="input">
                 <input
-                className="input-date"
-                value={todo}
-                placeholder="Do Your job!"
-                onChange={(e) => setTodo(e.target.value)}
+                    className="input-date"
+                    value={date}
+                    placeholder="date"
+                    onChange={(e) => setDate(e.target.value)}
+                    autoFocus
+                />
+                <input
+                    className="input-add"
+                    value={todo}
+                    placeholder="Do your job!"
+                    onChange={(e) => setTodo(e.target.value)}
                 />
                 <button className="input-btn" onClick={addList}>
                     추가
